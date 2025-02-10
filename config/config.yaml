@@ -1,0 +1,165 @@
+base:
+  database_path: "chroma/rosenberg/rosenberg.sqlite"
+  document_column: "Beskrivning"
+  metadata_columns:
+    - "index"
+    - "PostID"
+    - "Plats"
+    - "Län"
+    - "Härad"
+    - "Tingslag"
+    - "Församling"
+
+# TODO Check all counties
+tags:
+  blekinge:
+    type: Län
+    value: Blekinge län
+    collection_name: rosenberg_blekinge
+    persist_directory: chroma/rosenberg/län/blekinge
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Blekinge län'
+  gotland:
+    type: Län
+    value: Gotlands län
+    collection_name: rosenberg_gotland
+    persist_directory: chroma/rosenberg/län/gotland
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Gotlands län'
+  gavleborg:
+    type: Län
+    value: Gävleborgs län
+    collection_name: rosenberg_gavleborg
+    persist_directory: chroma/rosenberg/län/gavleborg
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Gävleborgs län'
+  goteborg_bohus:
+    type: Län
+    value: Göteborgs och Bohus län
+    collection_name: rosenberg_goteborg_bohus
+    persist_directory: chroma/rosenberg/län/goteborg_bohus
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Göteborgs och Bohus län'
+  halland:
+    type: Län
+    value: Hallands län
+    collection_name: rosenberg_halland
+    persist_directory: chroma/rosenberg/län/halland
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Hallands län'
+  jamtland:
+    type: Län
+    value: Jämtlands län
+    collection_name: rosenberg_jamtland
+    persist_directory: chroma/rosenberg/län/jamtland
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Jämtlands län'
+  jonkoping:
+    type: Län
+    value: Jönköpings län
+    collection_name: rosenberg_jonkoping
+    persist_directory: chroma/rosenberg/län/jonkoping
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Jönköpings län'
+  kalmar:
+    type: Län
+    value: Kalmar län
+    collection_name: rosenberg_kalmar
+    persist_directory: chroma/rosenberg/län/kalmar
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Kalmar län'
+  kopparberg:
+    type: Län
+    value: Kopparbergs län
+    collection_name: rosenberg_kopparberg
+    persist_directory: chroma/rosenberg/län/kopparberg
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Kopparbergs län'
+  kristianstad:
+    type: Län
+    value: Kristianstads län
+    collection_name: rosenberg_kristianstad
+    persist_directory: chroma/rosenberg/län/kristianstad
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Kristianstads län'
+  kronoberg:
+    type: Län
+    value: Kronobergs län
+    collection_name: rosenberg_kronoberg
+    persist_directory: chroma/rosenberg/län/kronoberg
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Kronobergs län'
+  malmohus:
+    type: Län
+    value: Malmöhus län
+    collection_name: rosenberg_malmohus
+    persist_directory: chroma/rosenberg/län/malmohus
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Malmöhus län'
+  norrbotten:
+    type: Län
+    value: Norrbottens län
+    collection_name: rosenberg_norrbotten
+    persist_directory: chroma/rosenberg/län/norrbotten
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Norrbottens län'
+  skaraborg:
+    type: Län
+    value: Skaraborgs län
+    collection_name: rosenberg_skaraborg
+    persist_directory: chroma/rosenberg/län/skaraborg
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Skaraborgs län'
+  stockholm:
+    type: Län
+    value: Stockholms län
+    collection_name: rosenberg_stockholm
+    persist_directory: chroma/rosenberg/län/stockholm
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Stockholms län'
+  sodermanland:
+    type: Län
+    value: Södermanlands län
+    collection_name: rosenberg_sodermanland
+    persist_directory: chroma/rosenberg/län/sodermanland
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Södermanlands län'
+  uppsala:
+    type: Län
+    value: Uppsala län
+    collection_name: rosenberg_uppsala
+    persist_directory: chroma/rosenberg/län/uppsala
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Uppsala län'
+  varmland:
+    type: Län
+    value: Värmlands län
+    collection_name: rosenberg_varmland
+    persist_directory: chroma/rosenberg/län/varmland
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Värmlands län'
+  vasterbotten:
+    type: Län
+    value: Västerbottens län
+    collection_name: rosenberg_vasterbotten
+    persist_directory: chroma/rosenberg/län/vasterbotten
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Västerbottens län'
+  vasternorrland:
+    type: Län
+    value: Västernorrlands län
+    collection_name: rosenberg_vasternorrland
+    persist_directory: chroma/rosenberg/län/vasternorrland
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Västernorrlands län'
+  vastmanland:
+    type: Län
+    value: Västmanlands län
+    collection_name: rosenberg_vastmanland
+    persist_directory: chroma/rosenberg/län/vastmanland
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Västmanlands län'
+  alvsborg:
+    type: Län
+    value: Älvsborgs län
+    collection_name: rosenberg_alvsborg
+    persist_directory: chroma/rosenberg/län/alvsborg
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Älvsborgs län'
+  orebro:
+    type: Län
+    value: Örebro län
+    collection_name: rosenberg_orebro
+    persist_directory: chroma/rosenberg/län/orebro
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Örebro län'
+  ostergotland:
+    type: Län
+    value: Östergötlands län
+    collection_name: rosenberg_ostergotland
+    persist_directory: chroma/rosenberg/län/ostergotland
+    sql_query: SELECT * FROM rosenberg WHERE Län = 'Östergötlands län'
+
+
+#  luggude:
+#    type: "Härad"
+#    value: "Luggude"
+#    persist_directory: "chroma/rosenberg/malmöhus/härad/luggude"
+#    sql_query: "SELECT * FROM rosenberg WHERE Härad = 'Luggude'"

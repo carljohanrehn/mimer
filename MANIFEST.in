@@ -1,0 +1,5 @@
+graft src
+graft chroma_storage
+graft config
+graft database
+recursive-exclude __pycache__ *.py[cod]

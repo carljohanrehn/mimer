@@ -1,0 +1,29 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+seaborn
+matplotlib
+numpy
+tqdm
+pandas
+scikit-learn
+torch
+torchvision
+torchaudio
+# torch-cpu
+# torchvision-cpu
+# torchaudio-cpu
+ipython
+jupyter
+jupyterlab
+jax
+jaxlib
+flax
+optax
+tensorflow-cpu
+tensorflow_datasets
+llama-index
+google-generativeai
+python-dotenv
+llama-index-llms-gemini
+chromadb
+tiktoken
+returns
