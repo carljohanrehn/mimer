@@ -2,4 +2,5 @@ graft src
 graft chroma_storage
 graft config
 graft database
+graft examples
 recursive-exclude __pycache__ *.py[cod]

@@ -102,7 +102,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-# .env
 .venv
 env/
 venv/
@@ -131,18 +130,24 @@ dmypy.json
 # Compiled extensions
 *.c
 
-# TODO AI assistant suggestions...
-
-# Chroma storage (persistent data)
-# chroma_storage/
-
-# SQLite database
-# database/
-
 # SQLite cache
-# *.sqlite
+*.sqlite
 
 # IDE-specific files
 .idea/
 .vscode/
+
+# Private RAG data...
+
+# Chroma storage (persistent data)
+chroma_storage/
+
+# Chroma metadata and collections
+config/
+
+# SQLite document database
+database/
+
+# Secrets kept here (e.g. API keys, passwords, etc)
+.env
 
