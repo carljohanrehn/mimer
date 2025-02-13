@@ -48,7 +48,7 @@ from chromadb.utils import embedding_functions
 
 from load_config import load_config
 
-load_dotenv()
+load_dotenv('config.env')
 
 # Define a global constant for the default model name
 DEFAULT_MODEL_NAME: str = "gemini-2.0-flash-exp"

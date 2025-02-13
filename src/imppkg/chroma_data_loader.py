@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Module Name: gemini-rag-chroma-app.py
+Module Name: chroma-data-loader.py
 
 Description:
     This module is designed to load documents from a specified directory into
@@ -56,7 +56,7 @@ from chromadb.utils import embedding_functions
 from load_config import load_config
 
 # Global constant or environment variable for embedding provider type
-load_dotenv()
+load_dotenv('config.env')
 EMBEDDING_PROVIDERS: list[str] = ['google', 'openai', 'huggingface']
 EMBEDDING_PROVIDER: str = os.getenv('EMBEDDING_PROVIDER', 'google')
 
